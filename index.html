@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  
+<title></title>
+
+<style type="text/css">
+body {
+
+	background:url(https://api.xygeng.cn/bing/1366.php) no-repeat center;
+	background-size:100% ;
+	
+	color: white;
+}
+.fd{
+float:left;
+}
+ul.countdown {
+	list-style: none;
+	//margin: 75px 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+}
+ul.countdown li {
+	display: inline-block;
+}
+ul.countdown li span {
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 30px;
+}
+ul.countdown li.seperator {
+	font-size: 30px;
+	line-height: 70px;
+	vertical-align: top;
+}
+ul.countdown li p {
+	color: white;
+	font-size: 14px;
+}
+</style>
+
+</head>
+<body>
+<ul class="countdown">
+  <h1 class="fd" align="center" style="margin-top:1px;">距离2020年高考还有</h1>
+  
+  <li> <span class="days">00</span>
+    <p class="days_ref">天</p>
+  </li>
+  <li class="seperator">|</li>
+  <li> <span class="hours">00</span>
+    <p class="hours_ref">时</p>
+  </li>
+  <li class="seperator">|</li>
+  <li> <span class="minutes">00</span>
+    <p class="minutes_ref">分</p>
+  </li>
+  <li class="seperator">|</li>
+  <li> <span class="seconds">00</span>
+    <p class="seconds_ref">秒</p>
+  </li>
+
+  <div style="text-align:center;">
+	
+	  
+
+	<iframe src="/m/1.html" class="fd" width="25%" height="auto" scrolling="no" frameborder="0"> </iframe>
+
+	<iframe src="/m/2.html" class="fd" width="25%" height="auto" scrolling="no" frameborder="0"> </iframe>
+	<iframe src="/m/3.html" class="fd" width="25%" height="auto" scrolling="no" frameborder="0"> </iframe>
+	<iframe src="/m/4.html" class="fd" width="25%" height="auto" scrolling="no" frameborder="0"> </iframe>
+	
+  </div>
+</ul>
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.downCount.js"></script> 
+<script type="text/javascript">
+	$('.countdown').downCount({
+		date: '06/07/2022 12:00:00',
+		offset: +10
+	}, function () {
+		alert('倒计时结束!');
+	});
+</script>
+
+</body>
+</html>
