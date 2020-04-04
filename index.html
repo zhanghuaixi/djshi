@@ -90,7 +90,7 @@ ul.countdown li p {
                                         c = (b - B) * 60;
                                         C = Math.floor((b - B) * 60);
                                         D = Math.floor((c - C) * 60);
-                                        runtime_span.innerHTML = "系统运行｜" + A + "天" + B + "小时" + C + "分" + D + "秒" + "   "
+                                        runtime_span.innerHTML = "系统运行｜" + A + "天" + B + "小时" + C + "分" + D + "秒" + "，现在是"
                                     }
                                     show_runtime();
 </script>
@@ -101,8 +101,9 @@ ul.countdown li p {
 setInterval("show_time0.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());", 1000);  
 </script>
 	  </div>
-<p>©江湖R_A_L</p>
   </div>
+
+<center><p>©江湖R_A_L</p></center>
 </ul>
 <script type="text/javascript" src="js/jquery.min.js"></script> 
 <script type="text/javascript" src="js/jquery.downCount.js"></script> 
