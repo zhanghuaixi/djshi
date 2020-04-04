@@ -74,7 +74,7 @@ ul.countdown li p {
 	<iframe src="https://zhanghuaixi.github.io/djshi/m/2.html" class="fd" width="25%" height="auto" scrolling="no" frameborder="0"> </iframe>
 	<iframe src="https://zhanghuaixi.github.io/djshi/m/3.html" class="fd" width="25%" height="auto" scrolling="no" frameborder="0"> </iframe>
 	<iframe src="https://zhanghuaixi.github.io/djshi/m/4.html" class="fd" width="25%" height="auto" scrolling="no" frameborder="0"> </iframe>
-	<span id="runtime_span">
+	<span id="runtime_span" class="fd">
 				</span>
 <script type="text/javascript">
                                     function show_runtime() {
@@ -94,6 +94,14 @@ ul.countdown li p {
                                     }
                                     show_runtime();
 </script>
+
+  
+	  <div id="show_time0" class="fd">
+<script>
+setInterval("show_time0.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());", 1000);  
+</script>
+	  </div>
+
 <p>©江湖R_A_L</p>
   </div>
 </ul>
