@@ -74,7 +74,26 @@ ul.countdown li p {
 	<iframe src="https://zhanghuaixi.github.io/djshi/m/2.html" class="fd" width="25%" height="auto" scrolling="no" frameborder="0"> </iframe>
 	<iframe src="https://zhanghuaixi.github.io/djshi/m/3.html" class="fd" width="25%" height="auto" scrolling="no" frameborder="0"> </iframe>
 	<iframe src="https://zhanghuaixi.github.io/djshi/m/4.html" class="fd" width="25%" height="auto" scrolling="no" frameborder="0"> </iframe>
-	
+	<span id="runtime_span">
+				</span>
+<script type="text/javascript">
+                                    function show_runtime() {
+                                        window.setTimeout("show_runtime()", 1000);
+                                        X = new Date("04/03/2020 02:22:00");
+                                        Y = new Date();
+                                        T = (Y.getTime() - X.getTime());
+                                        M = 24 * 60 * 60 * 1000;
+                                        a = T / M;
+                                        A = Math.floor(a);
+                                        b = (a - A) * 24;
+                                        B = Math.floor(b);
+                                        c = (b - B) * 60;
+                                        C = Math.floor((b - B) * 60);
+                                        D = Math.floor((c - C) * 60);
+                                        runtime_span.innerHTML = "系统成功运行｜" + A + "天" + B + "小时" + C + "分" + D + "秒"
+                                    }
+                                    show_runtime();
+</script>
 <p>©江湖R_A_L</p>
   </div>
 </ul>
